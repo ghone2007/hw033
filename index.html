@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    </head>
+     <script>
+            var hello = "hello";
+         function aa(){
+            d3.selectAll('div').text(random(1911,2016));
+            d3.selectAll('div').style({'color':'#fDDDDD'});
+            d3.select('body>div').append('div').text(hello);
+        }
+        function random(n,m){
+            return Math.ceil(Math.random()*(m-n)+n);
+        }    
+        </script>
+
+    
+    <body>
+        <div style="border:3px solid green;font-size:4em;"></div>
+        <div style="border:3px solid red;font-size:4em;"></div>
+       <input type="button" onclick="aa()" value="start" style="width:3em;font-size:4em;">
+       
+ 
+       
+    </body>
+</html>
